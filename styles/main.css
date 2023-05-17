@@ -1,0 +1,98 @@
+/* Primary color: black */
+/* Secondary color: E043BE */
+/* Black shade: 404040 */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 65%;
+}
+
+body {
+    background-color: black;
+    color: rgb(227, 227, 227);
+    font-family: 'Oswald', sans-serif;
+}
+
+.mainContainer {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+p {
+    font-size: 2rem;
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 2rem;
+    color: white;
+    background-color: #87156E;
+    cursor: pointer;
+    font-family: 'Oswald', sans-serif;
+}
+
+button:hover {
+    background-color: #4b083d;
+}
+
+/*************** Navigation ******************/
+
+nav {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+nav .links a{
+    margin-left: 5rem;
+    color: rgb(227, 227, 227);
+    text-decoration: none;
+}
+
+nav .logo {
+    font-size: 3rem;
+    color: #E043BE;
+}
+
+/*************** Header ******************/
+
+header {
+    display: flex;
+    height: 80vh;
+}
+
+header .logo {
+    width: 50%;
+    font-size: 50rem;
+    line-height: 1.3;
+    text-align: center;
+    color: #404040;
+}
+
+header .heroText {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+header p {
+    margin-bottom: 2rem;
+}
+
+header p {
+    width: 70%;
+}
