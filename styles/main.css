@@ -34,7 +34,7 @@ h1 {
 h2 {
     font-size: 4rem;
     font-weight: normal;
-    margin-top: 5rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
 }
 
@@ -43,7 +43,7 @@ h3 {
     margin-bottom: 1rem;
 }
 
-p {
+p, pre {
     font-size: 1.7rem;
     margin-bottom: 2rem;
     font-weight: 300;
@@ -138,7 +138,7 @@ header p {
 
 .ss {
     height: 22rem;
-    background: url(../images/bmi.png);
+    background: linear-gradient(to right, rgba(77, 8, 62, 0.6), rgba(113, 18, 92, 0.3)),url(../images/bmi.png);
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: top;
@@ -146,4 +146,34 @@ header p {
 
 .demoBtn {
     margin-right: 2rem;
+}
+
+
+/*************** Project ******************/
+
+
+.projectIntro img {
+    width: 60%;
+    display: block;
+    margin: 2rem auto;  
+    filter: brightness(70%);
+}
+
+.codeHead {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.7rem;
+    color: #25B2EF;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.code {
+    background-color: #170F14;
+    padding: 3rem;
+}
+
+.ctc {
+    text-decoration: underline;
+    cursor: pointer;
 }

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3466031817024466"
+     crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="mainContainer">
+      <nav>
+        <span class="logo">EVOLVING CODES</span>
+        <div class="links">
+          <a href="../index.html">Home</a>
+          <a href="#">Articles</a>
+          <a href="../projects.html">Projects</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+        </div>
+      </nav>
+
+      <h2>BMI Calculator</h2>
+      <section class="projectIntro">
+        <img
+          src="../images/bmi.png"
+          alt="body mass index caclulator screenshot"
+        />
+        <p>
+          BMI stands for Body Mass Index which is a measure of a person's body
+          fat. Using html, css and basic javascript we can build a simple
+          website which takes a person's height and weight as an input and
+          output Body Mass Index. It also tells you the category in which your
+          BMI falls.
+        </p>
+      </section>
+
+      <section class="projectCode">
+        <div class="codeHead">
+          <span>HTML</span>
+          <span class="ctc">Copy to clipboard</span>
+        </div>
+        <pre class="htmlCode code">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8" /&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0" /&gt;
+    &lt;title&gt;BMI Calculator&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css" /&gt;
+    &lt;style&gt;
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+    &lt;/style&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;BMI Calculator&lt;/h1&gt;
+    &lt;main&gt;
+      &lt;div class="weight"&gt;
+        &lt;label for="weight"&gt;Enter your weight: &lt;/label&gt;
+        &lt;input
+          type="text"
+          name="weight"
+          id="weight"
+          placeholder="in kilograms"
+        /&gt;
+      &lt;/div&gt;
+      &lt;div class="height"&gt;
+        &lt;label for="height"&gt;Enter your height: &lt;/label&gt;
+        &lt;input
+          type="text"
+          name="height"
+          id="height"
+          placeholder="in centimeters"
+        /&gt;
+      &lt;/div&gt;
+      &lt;button&gt;Calculate&lt;/button&gt;
+      &lt;p class="BMIResult"&gt;
+        Your BMI is &lt;span class="bmi"&gt;___&lt;/span&gt; and falls within the category
+        of &lt;span class="category"&gt;___&lt;/span&gt;
+      &lt;/p&gt;
+      &lt;p class="info"&gt;
+        If your BMI is less than 18.5, it falls within the underweight range. If
+        your BMI is 18.5 to 24.9, it falls within the Healthy Weight range. If
+        your BMI is 25.0 to 29.9, it falls within the overweight range. If your
+        BMI is 30.0 or higher, it falls within the obese range.
+      &lt;/p&gt;
+    &lt;/main&gt;
+    &lt;script src="script.js"&gt;&lt;/script&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+        </pre>
+        <div class="codeHead">
+            <span>CSS</span>
+            <span class="ctc">Copy to clipboard</span>
+          </div>
+        <pre class="cssCode code">
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  background-color: #f5e2e2;
+  font-family: "Oswald", sans-serif;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+h1 {
+  color: #025464;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 4.8rem;
+  margin-bottom: 5rem;
+  font-weight: normal;
+}
+
+main {
+  background-color: white;
+  box-shadow: 8px 12px 28px -11px rgba(0, 0, 0, 0.35);
+  max-width: 50rem;
+  margin: 0 auto;
+  padding: 3rem;
+}
+
+label {
+  font-size: 2.1rem;
+}
+
+input:focus,
+input:active {
+  outline: 2px solid #025464;
+}
+
+input {
+  border: none;
+  font-family: oswald;
+  background-color: #f5e2e2;
+}
+
+.weight,
+.height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.weight input,
+.height input {
+  margin-left: 2rem;
+  flex-grow: 1;
+  padding: 0.8rem;
+}
+
+button {
+  padding: 0.7rem 2.5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  background-color: #025464;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: oswald;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+button:hover {
+    background-color: #002f39;
+}
+
+.BMIResult {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bmi,
+.category {
+  color: green;
+}
+        </pre>
+        <div class="codeHead">
+            <span>Javascript</span>
+            <span class="ctc">Copy to clipboard</span>
+          </div>
+        <pre class="jsCode code">
+var button = document.querySelector("button");
+var weightInput = document.querySelector("#weight");
+var heightInput = document.querySelector("#height");
+var resultBMI = document.querySelector(".bmi");
+var category = document.querySelector(".category");
+
+button.addEventListener("click", function () {
+  var weight = Number(weightInput.value);
+  var height = Number(heightInput.value) / 100;
+  var bmi = Math.round((weight / (height * height)) * 100) / 100;
+  resultBMI.innerHTML = bmi;
+
+  if (bmi &lt; 18.5) {
+    category.innerHTML = "Underweight";
+    category.style.color = "red";
+    resultBMI.style.color = "red";
+  } else if (bmi &gt; 18.5 && bmi &lt; 24.9) {
+      category.innerHTML = " Healthy Weight";
+      category.style.color = "green";
+    resultBMI.style.color = "green";
+  } else if (bmi &gt; 25 && bmi &lt; 29.9) {
+    category.innerHTML = "Overweight";
+    category.style.color = "red";
+    resultBMI.style.color = "red";
+  } else {
+    category.innerHTML = "Obese";
+    category.style.color = "red";
+    resultBMI.style.color = "red";
+  }
+});
+        </pre>
+      </section>
+    </div>
+  </body>
+</html>
