@@ -18,6 +18,10 @@ body {
     font-family: 'Oswald', sans-serif;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
 .mainContainer {
     width: 90%;
     margin: 0 auto;
@@ -27,8 +31,23 @@ h1 {
     font-size: 5rem;
 }
 
+h2 {
+    font-size: 4rem;
+    font-weight: normal;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
 p {
     font-size: 1.7rem;
+    margin-bottom: 2rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
 }
 
 button {
@@ -42,6 +61,15 @@ button {
 
 button:hover {
     background-color: #4b083d;
+}
+
+.aBtn {
+    color: #E043BE;
+    font-size: 1.7rem;
+}
+
+.aBtn:hover {
+    color: #87156E;
 }
 
 /*************** Navigation ******************/
@@ -95,4 +123,27 @@ header p {
 
 header p {
     width: 70%;
+}
+
+/*************** Projects ******************/
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 3rem;
+    padding: 3rem;
+    background-color: #170F14;
+}
+
+
+.ss {
+    height: 22rem;
+    background: url(../images/bmi.png);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.demoBtn {
+    margin-right: 2rem;
 }
