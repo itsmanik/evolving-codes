@@ -3,177 +3,189 @@
 /* Black shade: 404040 */
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 65%;
+  font-size: 65%;
 }
 
 body {
-    background-color: black;
-    color: rgb(227, 227, 227);
-    font-family: 'Oswald', sans-serif;
+  background-color: black;
+  color: rgb(227, 227, 227);
+  font-family: "Oswald", sans-serif;
 }
 
 body::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 .mainContainer {
-    width: 90%;
-    margin: 0 auto;
+  width: 90%;
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 5rem;
+  font-size: 5rem;
 }
 
 h2 {
-    font-size: 4rem;
-    font-weight: normal;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
+  font-size: 4rem;
+  font-weight: normal;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 h3 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+  font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-p, pre {
-    font-size: 1.7rem;
-    margin-bottom: 2rem;
-    font-weight: 300;
-    letter-spacing: 0.1rem;
+p,
+pre {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
 }
 
 button {
-    padding: 1rem 3rem;
-    font-size: 1.7rem;
-    color: white;
-    background-color: #87156E;
-    cursor: pointer;
-    font-family: 'Oswald', sans-serif;
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #87156e;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
 }
 
 button:hover {
-    background-color: #4b083d;
+  background-color: #4b083d;
 }
 
 .aBtn {
-    color: #E043BE;
-    font-size: 1.7rem;
+  color: #e043be;
+  font-size: 1.7rem;
 }
 
 .aBtn:hover {
-    color: #87156E;
+  color: #87156e;
 }
 
 /*************** Navigation ******************/
 
 nav {
-    
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 1.7rem;
-    padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  padding: 2rem 0;
 }
 
-nav .links a{
-    margin-left: 5rem;
-    color: rgb(227, 227, 227);
-    text-decoration: none;
+nav .links a {
+  margin-left: 5rem;
+  color: rgb(227, 227, 227);
+  text-decoration: none;
 }
 
 nav .logo {
-    font-size: 2.7rem;
-    color: #E043BE;
+  font-size: 2.7rem;
+  color: #e043be;
 }
 
 /*************** Header ******************/
 
 header {
-    display: flex;
-    height: 80vh;
+  display: flex;
+  height: 80vh;
 }
 
 header .logo {
-    width: 50%;
-    font-size: 40rem;
-    line-height: 1.2;
-    text-align: center;
-    color: #404040;
+  width: 50%;
+  font-size: 40rem;
+  line-height: 1.2;
+  text-align: center;
+  color: #404040;
 }
 
 header .heroText {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 header p {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 header p {
-    width: 70%;
+  width: 70%;
 }
 
 /*************** Projects ******************/
 
 .project {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 3rem;
-    padding: 3rem;
-    background-color: #170F14;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  column-gap: 3rem;
+  padding: 3rem;
+  background-color: #170f14;
+  margin-bottom: 3rem;
 }
 
+.ss.gpa {
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(153, 14, 123, 0.243)),
+    url(../images/gpa.jpg);
+  height: 22rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
 
-.ss {
-    height: 22rem;
-    background: linear-gradient(to right, rgba(77, 8, 62, 0.6), rgba(113, 18, 92, 0.3)),url(../images/bmi.png);
-    background-size: cover; 
-    background-repeat: no-repeat;
-    background-position: top;
+.ss.bmi {
+    background: linear-gradient(
+      to right,
+      rgba(77, 8, 62, 0.6),
+      rgba(113, 18, 92, 0.3)
+    ),
+    url(../images/bmi.png);
+  height: 22rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
 }
 
 .demoBtn {
-    margin-right: 2rem;
+  margin-right: 2rem;
 }
-
 
 /*************** Project ******************/
 
-
 .projectIntro img {
-    width: 60%;
-    display: block;
-    margin: 2rem auto;  
-    filter: brightness(70%);
+  width: 60%;
+  display: block;
+  margin: 2rem auto;
+  filter: brightness(70%);
 }
 
 .codeHead {
-    display: flex;
-    justify-content: space-between;
-    font-size: 1.7rem;
-    color: #25B2EF;
-    margin-top: 3rem;
-    margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  color: #25b2ef;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
 }
 
 .code {
-    background-color: #170F14;
-    padding: 3rem;
+  background-color: #170f14;
+  padding: 3rem;
 }
 
 .ctc {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
