@@ -137,7 +137,7 @@ header p {
 }
 
 .ss.gpa {
-    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(153, 14, 123, 0.243)),
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(153, 14, 123, 0.243)),
     url(../images/gpa.jpg);
   height: 22rem;
   background-size: cover;
@@ -146,7 +146,7 @@ header p {
 }
 
 .ss.bmi {
-    background: linear-gradient(
+  background: linear-gradient(
       to right,
       rgba(77, 8, 62, 0.6),
       rgba(113, 18, 92, 0.3)
