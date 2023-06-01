@@ -1,0 +1,174 @@
+/* Primary color: black */
+/* Secondary color: E043BE */
+/* Black shade: 404040 */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65%;
+}
+
+body {
+  background-color: black;
+  color: rgb(227, 227, 227);
+  font-family: "Oswald", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.mainContainer {
+  width: 90%;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 4rem;
+  font-weight: normal;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+p,
+pre {
+  font-size: 1.7rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+}
+
+button {
+  padding: 1rem 3rem;
+  font-size: 1.7rem;
+  color: white;
+  background-color: #87156e;
+  cursor: pointer;
+  font-family: "Oswald", sans-serif;
+  border: none;
+}
+
+button:hover {
+  background-color: #4b083d;
+}
+
+.aBtn {
+  color: #e043be;
+  font-size: 1.7rem;
+}
+
+.aBtn:hover {
+  color: #87156e;
+}
+
+/* Main Page */
+
+.gpa {
+  background-color: #170f14;
+  text-align: center;
+  width: 80%;
+  margin: 5rem auto;
+  padding: 10rem;
+}
+
+.gpa h1 {
+  color: #B71375;
+  margin-bottom: 3rem;
+  font-weight: 500;
+} 
+
+.gpa button {
+  margin-right: 4rem;
+  border: none;
+  letter-spacing: inherit;
+}
+
+
+/* Semister selection page */
+
+.sem h2 {
+  text-align: center;
+}
+
+.sem .box {
+  background-color: #170f14;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 80%;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  text-align: center;
+  row-gap: 2rem;
+  column-gap: 2rem;
+  padding: 2rem;
+}
+
+.sem .box button {
+  background-color: black;
+  padding: 1.3rem;
+}
+
+/* first sem Chem  */
+
+.firstSemChem h2 {
+  text-align: center;
+}
+
+.firstSemChem .box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #170f14;
+  font-size: 1.7rem;
+  width: 80%;
+  margin: 0 auto;
+  row-gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+
+.firstSemChem .box div label {
+  margin-right: 1rem;
+}
+
+.firstSemChem .box div input {
+  font-size: inherit;
+  font-family: inherit;
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  background-color: black;
+  color: white;
+}
+
+.firstSemChem .box {
+  margin-bottom: 2rem;
+}
+
+.firstSemChem button {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.firstSemChem p {
+  text-align: center;
+}
+
+.sgpaResult {
+  color: red;
+}

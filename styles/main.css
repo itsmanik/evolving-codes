@@ -58,6 +58,7 @@ button {
   background-color: #87156e;
   cursor: pointer;
   font-family: "Oswald", sans-serif;
+  border: none;
 }
 
 button:hover {
