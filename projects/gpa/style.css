@@ -25,6 +25,10 @@ body::-webkit-scrollbar {
 .mainContainer {
   width: 90%;
   margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -53,7 +57,7 @@ pre {
 
 button {
   padding: 1rem 3rem;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: white;
   background-color: #87156e;
   cursor: pointer;
@@ -75,14 +79,6 @@ button:hover {
 }
 
 /* Main Page */
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100vw;
-}
 
 .gpa {
   background-color: #170f14;
@@ -116,6 +112,10 @@ body {
   text-align: center;
 }
 
+.sem {
+  width: 100%;
+}
+
 .sem .box {
   background-color: #170f14;
   display: grid;
@@ -136,6 +136,10 @@ body {
 
 /* first sem Chem  */
 
+.firstSemChem {
+  width: 100%;
+}
+
 .firstSemChem h2 {
   text-align: center;
 }
@@ -145,8 +149,10 @@ body {
   grid-template-columns: 1fr 1fr;
   background-color: #170f14;
   font-size: 1.7rem;
-  width: 80%;
+  max-width: 100rem;
+  column-gap: 2rem;
   margin: 0 auto;
+  margin-bottom: 2rem;
   row-gap: 2rem;
   padding: 2rem;
   text-align: center;
@@ -166,10 +172,6 @@ body {
   outline: none;
   background-color: black;
   color: white;
-}
-
-.firstSemChem .box {
-  margin-bottom: 2rem;
 }
 
 .firstSemChem button {

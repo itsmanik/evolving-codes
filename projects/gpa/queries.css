@@ -1,6 +1,7 @@
 @media (max-width: 1110px) {
     html {
-        font-size: 50%;
+        font-size: 45%;
+        /* font-size: 55%; */
     }
 
     .gpa {
@@ -9,8 +10,13 @@
       }
 }
 
-@media (max-width: 400px) {
-    html {
-        font-size: 50%;
-    }
+@media (max-width: 600px) {
+    .sem .box {
+        grid-template-columns: 1fr;
+      }
+
+      .firstSemChem .box {
+        grid-template-columns: 1fr;
+        max-width: 50rem;
+      }
 }
