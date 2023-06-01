@@ -1,0 +1,16 @@
+@media (max-width: 1110px) {
+    html {
+        font-size: 50%;
+    }
+
+    .gpa {
+        width: 95%;
+        height: 80vh;
+      }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 40%;
+    }
+}

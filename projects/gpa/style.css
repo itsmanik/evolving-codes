@@ -76,12 +76,24 @@ button:hover {
 
 /* Main Page */
 
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
 .gpa {
   background-color: #170f14;
   text-align: center;
   width: 80%;
-  margin: 5rem auto;
-  padding: 10rem;
+  height: 80vh;
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .gpa h1 {
@@ -94,6 +106,7 @@ button:hover {
   margin-right: 4rem;
   border: none;
   letter-spacing: inherit;
+  margin-bottom: 1rem;
 }
 
 
