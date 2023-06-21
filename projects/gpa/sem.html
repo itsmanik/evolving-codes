@@ -1,9 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-JX0YS5GS2F"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-JX0YS5GS2F");
+    </script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SGPA and CGPA Calculator</title>
     <script
       async
@@ -20,22 +34,26 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-</head>
-<body>
+  </head>
+  <body>
     <div class="mainContainer">
-        <main class="sem">
-            <h2>Choose your semister</h2>
-            <div class="box">
-                <button onclick="window.location.href = 'firstsemchem'">1st or 2nd SEM (Chemistry Cycle)</button>
-                <button onclick="window.location.href = 'firstsemphy'">1st or 2nd SEM (Physics Cycle)</button>
-                <button>3rd SEM (Common Branch)</button>
-                <button>4th SEM (Common Branch)</button>
-                <button>5th SEM (Common Branch)</button>
-                <button>6th SEM (Common Branch)</button>
-                <button>7th SEM (Common Branch)</button>
-                <button>8th SEM (Common Branch)</button>
-            </div>
-        </main>
+      <main class="sem">
+        <h2>Choose your semister</h2>
+        <div class="box">
+          <button onclick="window.location.href = 'firstsemchem'">
+            1st or 2nd SEM (Chemistry Cycle)
+          </button>
+          <button onclick="window.location.href = 'firstsemphy'">
+            1st or 2nd SEM (Physics Cycle)
+          </button>
+          <button>3rd SEM (Common Branch)</button>
+          <button>4th SEM (Common Branch)</button>
+          <button>5th SEM (Common Branch)</button>
+          <button>6th SEM (Common Branch)</button>
+          <button>7th SEM (Common Branch)</button>
+          <button>8th SEM (Common Branch)</button>
+        </div>
+      </main>
     </div>
-</body>
+  </body>
 </html>
