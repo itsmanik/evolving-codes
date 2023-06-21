@@ -44,7 +44,7 @@ h3 {
 }
 
 p,
-pre {
+pre, label {
   font-size: 1.7rem;
   margin-bottom: 2rem;
   font-weight: 300;
@@ -72,6 +72,15 @@ button:hover {
 
 .aBtn:hover {
   color: #87156e;
+}
+
+input, textarea {
+  background-color: black;
+  border: none;
+  color: white;
+  font-size: 1.7rem;
+  padding: 0.5rem 1rem;
+  font-family: inherit;
 }
 
 /*************** Navigation ******************/
@@ -189,4 +198,36 @@ header p {
 .ctc {
   text-decoration: underline;
   cursor: pointer;
+}
+
+/*************** Contact Us ******************/
+
+#contactForm {
+  min-height: 100vh;
+}
+
+#contactForm p {
+  grid-column: 1/-1;
+  text-align: center;
+}
+
+#contactForm button {
+  grid-column: 1/-1;
+  text-align: center;
+  justify-self: center;
+}
+
+#contactForm h2 {
+  margin-bottom: 7rem;
+}
+
+form {
+  background-color: #170F14;  
+  width: 60%;
+  padding: 3rem 7rem;
+  row-gap: 1rem;
+  align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
 }
