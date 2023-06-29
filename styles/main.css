@@ -12,6 +12,13 @@ html {
   font-size: 65%;
 }
 
+:root {
+  --primaryColor: #af0069;
+  --primaryDarkerColor: #700746;
+  --greyColor: #979797;
+  --lightWhite: rgb(231, 231, 231);
+}
+
 body {
   background-color: black;
   color: rgb(227, 227, 227);
@@ -28,14 +35,16 @@ body::-webkit-scrollbar {
 } */
 
 h1 {
-  font-size: 5rem;
+  font-size: 4.5rem;
+  color: var(--primaryColor);
 }
 
 h2 {
+  color: var(--primaryColor);
   font-size: 4rem;
   font-weight: normal;
-  margin-top: 4rem;
-  margin-bottom: 2rem;
+  text-align: center;
+  padding-top: 2rem;
 }
 
 h3 {
@@ -50,6 +59,7 @@ label {
   margin-bottom: 2rem;
   font-weight: 300;
   letter-spacing: 0.1rem;
+  color: var(--lightWhite);
 }
 
 span {
@@ -62,14 +72,15 @@ button {
   padding: 1rem 3rem;
   font-size: 1.7rem;
   color: white;
-  background-color: #87156e;
+  background-color: var(--primaryColor);
   cursor: pointer;
   font-family: "Oswald", sans-serif;
   border: none;
+  border-radius: 3px;
 }
 
 button:hover {
-  background-color: #4b083d;
+  background-color: var(--primaryDarkerColor);
 }
 
 .aBtn {
@@ -91,6 +102,10 @@ textarea {
   font-family: inherit;
 }
 
+.subHeading {
+  color: var(--greyColor);
+}
+
 /*************** Navigation ******************/
 
 nav {
@@ -109,17 +124,18 @@ nav .links a {
   text-decoration: none;
 }
 
-nav .logo, footer .logo {
+nav .logo,
+footer .logo {
   font-size: 2.7rem;
   font-weight: 400;
-  color: #e043be;
+  color: var(--primaryColor);
 }
 
 /*************** Header ******************/
 
 header {
   display: flex;
-  height: 80vh;
+  height: 90vh;
   width: 90%;
   margin: 0 auto;
 }
@@ -128,7 +144,7 @@ header .logo {
   width: 50%;
   line-height: 1.2;
   text-align: center;
-  color: #404040;
+  color: #3f3f3f;
 }
 
 header span {
@@ -142,6 +158,11 @@ header .heroText {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
+
+header .heroText h1 {
+  line-height: 1;
+  margin-bottom: 1rem;
 }
 
 header p {
@@ -237,8 +258,8 @@ header p {
   justify-self: center;
 }
 
-#contactForm h2 {
-  margin-bottom: 7rem;
+.formDiv {
+  margin-top: 7rem;
 }
 
 form {
