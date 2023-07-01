@@ -10,6 +10,7 @@
 
 html {
   font-size: 65%;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -21,7 +22,7 @@ html {
 
 body {
   background-color: black;
-  color: rgb(227, 227, 227);
+  color: var(--lightWhite);
   font-family: "Oswald", sans-serif;
 }
 
@@ -104,6 +105,7 @@ textarea {
 
 .subHeading {
   color: var(--greyColor);
+  text-align: center;
 }
 
 /*************** Navigation ******************/
@@ -129,6 +131,11 @@ footer .logo {
   font-size: 2.7rem;
   font-weight: 400;
   color: var(--primaryColor);
+}
+
+hr {
+  border: none;
+  border-top: 1px solid rgb(24, 24, 24);
 }
 
 /*************** Header ******************/
@@ -276,14 +283,12 @@ form {
 /*************** Footer ******************/
 
 footer {
-  border-top: 1px solid grey;
   color: rgb(160, 160, 160);
 }
 
 .footerContainer {
   display: grid;
   grid-template-columns: 2fr 2fr 1fr;
-  width: 100%;
   width: 90%;
   margin: 0 auto;
   padding: 3rem;
@@ -307,4 +312,39 @@ footer a {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+}
+
+/*************** Navigation ******************/
+
+#services {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.servicesDiv {
+  margin: 9rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* column-gap: 5rem; */
+  row-gap: 10rem;
+  justify-items: center;
+  align-items: center;
+  /* place-items: center; */
+  text-align: center;
+}
+
+.illustration img {
+  height: 15rem;
+  /* border: 1px solid pink; */
+}
+
+.illustration {
+  height: 20rem;
+  width: 20rem;
+  background-color: #131313;
+  border-radius: 50%;
+}
+
+.seoSVG {
+  transform: translateX(-20%);
 }
