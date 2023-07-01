@@ -18,6 +18,7 @@ html {
   --primaryDarkerColor: #700746;
   --greyColor: #979797;
   --lightWhite: rgb(231, 231, 231);
+  --primaryDeepDark: #170f14;
 }
 
 body {
@@ -106,6 +107,7 @@ textarea {
 .subHeading {
   color: var(--greyColor);
   text-align: center;
+  margin-bottom: 4rem;
 }
 
 /*************** Navigation ******************/
@@ -122,7 +124,7 @@ nav {
 
 nav .links a {
   margin-left: 5rem;
-  color: rgb(227, 227, 227);
+  color: var(--lightWhite);
   text-decoration: none;
 }
 
@@ -187,8 +189,9 @@ header p {
   grid-template-columns: 1fr 2fr;
   column-gap: 3rem;
   padding: 3rem;
-  background-color: #170f14;
-  margin-bottom: 3rem;
+  background-color: var(--primaryDeepDark);
+  width: 90%;
+  margin: 3rem auto;
 }
 
 .ss.gpa {
@@ -217,34 +220,6 @@ header p {
   margin-right: 2rem;
 }
 
-/*************** Project ******************/
-
-.projectIntro img {
-  width: 60%;
-  display: block;
-  margin: 2rem auto;
-  filter: brightness(70%);
-}
-
-.codeHead {
-  display: flex;
-  justify-content: space-between;
-  font-size: 1.7rem;
-  color: #25b2ef;
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.code {
-  background-color: #170f14;
-  padding: 3rem;
-}
-
-.ctc {
-  text-decoration: underline;
-  cursor: pointer;
-}
-
 /*************** Contact Us ******************/
 
 #contactForm {
@@ -270,7 +245,7 @@ header p {
 }
 
 form {
-  background-color: #170f14;
+  background-color: var(--primaryDeepDark);
   width: 60%;
   padding: 3rem 7rem;
   row-gap: 1rem;
@@ -283,7 +258,7 @@ form {
 /*************** Footer ******************/
 
 footer {
-  color: rgb(160, 160, 160);
+  color: var(--greyColor);
 }
 
 .footerContainer {
@@ -314,7 +289,7 @@ footer a {
   gap: 0.5rem;
 }
 
-/*************** Navigation ******************/
+/*************** Services ******************/
 
 #services {
   width: 90%;
@@ -325,17 +300,14 @@ footer a {
   margin: 9rem 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* column-gap: 5rem; */
   row-gap: 10rem;
   justify-items: center;
   align-items: center;
-  /* place-items: center; */
   text-align: center;
 }
 
 .illustration img {
   height: 15rem;
-  /* border: 1px solid pink; */
 }
 
 .illustration {
