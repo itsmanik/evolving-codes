@@ -1,0 +1,31 @@
+@media (max-width: 1024px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+
+@media (max-width: 836px) {
+  header {
+    flex-direction: column;
+    min-height: unset;
+    padding-bottom: 10rem;
+  }
+
+  header p {
+    width: 75%;
+  }
+
+  header .logo {
+    width: 100%;
+  }
+
+  header span {
+    font-size: 20rem;
+  }
+
+  header .heroText {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+}

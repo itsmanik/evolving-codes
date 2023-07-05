@@ -21,9 +21,12 @@ html {
   --primaryDeepDark: #170f14;
 }
 
+
+/* don't forget to remove overflow x */
 body {
   background-color: black;
-  color: var(--lightWhite);
+  overflow-x: hidden;
+  color: var(--lightWhite); 
   font-family: "Oswald", sans-serif;
 }
 
@@ -144,7 +147,7 @@ hr {
 
 header {
   display: flex;
-  height: 90vh;
+  min-height: 90vh;  
   width: 90%;
   margin: 0 auto;
 }
@@ -176,9 +179,6 @@ header .heroText h1 {
 
 header p {
   margin-bottom: 2rem;
-}
-
-header p {
   width: 70%;
 }
 
