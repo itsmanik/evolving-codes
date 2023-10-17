@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+}
+
+/* ************************* NAVIGATION ************************* */
+
+nav {
+    background-color: transparent;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding: 1.3rem 5rem;
+    align-items: center;
+}
+
+.links a {
+    color: white;
+    margin-left: 7rem;
+    text-decoration: none;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 2.5rem;
+    color: white;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+.links a:hover, .links a:active {
+    text-decoration: underline;
+   text-underline-offset: 3px;
+}
+
+/* ************************* HOME ************************* */
+
+main {
+    background: url(./pie-factory.svg), linear-gradient(45deg, #000249,#1555a8, #000249);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+main h1 {
+    font-size: 6rem;
+}
+
+main p {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+button {
+    font-family: inherit;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
