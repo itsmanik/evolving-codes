@@ -6,11 +6,26 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Oswald', sans-serif;
     font-size: 1.8rem;
+    color: rgb(32, 32, 32);
+    background-color: #EBF7FF;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+.description {
+    margin-bottom: 7rem;
 }
 
 /* ************************* NAVIGATION ************************* */
@@ -44,25 +59,23 @@ nav {
     text-decoration: none;
 }
 
-.links a:hover, .links a:active {
+.links a:hover,
+.links a:active {
     text-decoration: underline;
-   text-underline-offset: 3px;
+    text-underline-offset: 3px;
 }
 
 /* ************************* HOME ************************* */
 
 main {
-    background: url(./pie-factory.svg), linear-gradient(45deg, #000249,#1555a8, #000249);
+    background: url(./pie-factory.svg), linear-gradient(45deg, #000249, #1555a8, #000249);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-}
-
-main h1 {
-    font-size: 6rem;
+    margin-bottom: 5rem;
 }
 
 main p {
@@ -74,7 +87,75 @@ button {
     font-family: inherit;
     border: none;
     padding: 1rem 2rem;
+    color: rgb(32, 32, 32);
     border-radius: 1rem;
-    font-size: 1.7rem;
+    font-size: 1.9rem;
     cursor: pointer;
+}
+
+/* ************************* WORKING ************************* */
+
+#working {
+    text-align: center;
+    max-width: 110rem;
+    margin: auto;
+    margin-bottom: 6rem;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    text-align: left;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 6rem 4rem;
+    color: white;
+    font-weight: 300;
+    background: linear-gradient(270deg, #0f1370, #064b99);
+    border-radius: 2rem;
+}
+
+.card span {
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+/* ************************* SECTION CTA ************************* */
+
+.cta button {
+    color: white;
+    background: linear-gradient(90deg, #0f1370, #064b99);
+}
+
+.cta {
+    min-height: 80vh;
+    background-color: #C2DBFF;
+    padding: 8rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cta img {
+    width: 100%;
+}
+
+.cta-container {
+    max-width: 110rem;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 5rem;
+    align-items: center;
+}
+
+.cta-container h1 {
+    line-height: 1;
+}
+
+.cta-text p {
+    margin: 2rem 0rem;
 }

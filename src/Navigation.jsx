@@ -7,7 +7,7 @@ function Nav() {
             <Link to="/" className="logo">EVOLVING CODES</Link>
             <div className="links">
                 <Link to="/">Home</Link>
-                <Link to="#working">Working</Link>
+                <a href="#working">Working</a>
                 <Link to="/services">Services</Link>
                 <Link to="#contact">Contact Us</Link>
             </div>
