@@ -138,6 +138,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 6rem;
 }
 
 .cta img {
@@ -158,4 +159,46 @@ button {
 
 .cta-text p {
     margin: 2rem 0rem;
+}
+
+/* ************************* CONTACT ************************* */
+
+
+#contact {
+    text-align: center;
+}
+
+#contact div {
+    margin-bottom: 2.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    justify-items: start;
+    width: 100%;
+}
+
+.contact-form {
+    border-radius: 2rem;
+    box-shadow: 2px 2px 15px -1px rgb(44, 44, 44);
+    padding: 4rem 8rem;
+    color: white;
+    margin: 5rem auto;
+    width: 55rem;
+    background: linear-gradient(270deg, #0c6fe0, #0f1370);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact textarea, #contact input {
+    width: 100%;
+    resize: none;
+    font-size: 1.5rem;
+    padding: 3px 8px;
+    outline: none;
+    font-family: inherit;
+}
+
+#contact button {
+    padding: 0.7rem 3rem;
+    font-size: 1.7rem;
 }

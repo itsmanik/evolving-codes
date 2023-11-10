@@ -1,4 +1,5 @@
 import React from "react";
+import Contact from "./Contact";
 
 function Home() {
     return <>
@@ -54,7 +55,7 @@ function Home() {
                     <p>
                         We do not use any third party software like wordpress, wix etc,
                         we build them with authentic code from all the way from scratch.
-                        This ensures stability, security and faster website.
+                        This ensures stability, security and speed.
                     </p>
                     <button>SERVICES</button>
                 </div>
@@ -63,6 +64,7 @@ function Home() {
                 </div>
             </div>
         </div>
+        <Contact />
     </>
 }
 

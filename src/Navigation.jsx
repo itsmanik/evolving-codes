@@ -9,7 +9,7 @@ function Nav() {
                 <Link to="/">Home</Link>
                 <a href="#working">Working</a>
                 <Link to="/services">Services</Link>
-                <Link to="#contact">Contact Us</Link>
+                <a href="#contact">Contact Us</a>
             </div>
         </nav>
     </>
